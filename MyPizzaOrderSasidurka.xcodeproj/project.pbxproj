@@ -11,6 +11,11 @@
 		D275BE4B2CAC1A6D00C770BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D275BE4A2CAC1A6D00C770BC /* ContentView.swift */; };
 		D275BE4D2CAC1A6E00C770BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D275BE4C2CAC1A6E00C770BC /* Assets.xcassets */; };
 		D275BE502CAC1A6E00C770BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D275BE4F2CAC1A6E00C770BC /* Preview Assets.xcassets */; };
+		D275BE572CAC1AA700C770BC /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D275BE562CAC1AA700C770BC /* OrderListView.swift */; };
+		D2B985DB2CC556A400211483 /* MyPizzaOrderDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2B985D92CC556A400211483 /* MyPizzaOrderDataModel.xcdatamodeld */; };
+		D2B985E12CC6021600211483 /* MyPizzaOrderDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B985E02CC6021600211483 /* MyPizzaOrderDataModel.swift */; };
+		D2B985EB2CC60AE100211483 /* OrderEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B985E92CC60AE100211483 /* OrderEntity+CoreDataClass.swift */; };
+		D2B985EC2CC60AE100211483 /* OrderEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B985EA2CC60AE100211483 /* OrderEntity+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		D275BE4A2CAC1A6D00C770BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D275BE4C2CAC1A6E00C770BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D275BE4F2CAC1A6E00C770BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D275BE562CAC1AA700C770BC /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
+		D2B985DA2CC556A400211483 /* MyPizzaOrderDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyPizzaOrderDataModel.xcdatamodel; sourceTree = "<group>"; };
+		D2B985E02CC6021600211483 /* MyPizzaOrderDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPizzaOrderDataModel.swift; sourceTree = "<group>"; };
+		D2B985E92CC60AE100211483 /* OrderEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OrderEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D2B985EA2CC60AE100211483 /* OrderEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OrderEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,8 @@
 		D275BE3C2CAC1A6D00C770BC = {
 			isa = PBXGroup;
 			children = (
+				D2B985E92CC60AE100211483 /* OrderEntity+CoreDataClass.swift */,
+				D2B985EA2CC60AE100211483 /* OrderEntity+CoreDataProperties.swift */,
 				D275BE472CAC1A6D00C770BC /* MyPizzaOrderSasidurka */,
 				D275BE462CAC1A6D00C770BC /* Products */,
 			);
@@ -53,6 +65,9 @@
 			children = (
 				D275BE482CAC1A6D00C770BC /* MyPizzaOrderSasidurkaApp.swift */,
 				D275BE4A2CAC1A6D00C770BC /* ContentView.swift */,
+				D275BE562CAC1AA700C770BC /* OrderListView.swift */,
+				D2B985E02CC6021600211483 /* MyPizzaOrderDataModel.swift */,
+				D2B985D92CC556A400211483 /* MyPizzaOrderDataModel.xcdatamodeld */,
 				D275BE4C2CAC1A6E00C770BC /* Assets.xcassets */,
 				D275BE4E2CAC1A6E00C770BC /* Preview Content */,
 			);
@@ -138,7 +153,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D275BE4B2CAC1A6D00C770BC /* ContentView.swift in Sources */,
+				D2B985EC2CC60AE100211483 /* OrderEntity+CoreDataProperties.swift in Sources */,
+				D2B985DB2CC556A400211483 /* MyPizzaOrderDataModel.xcdatamodeld in Sources */,
 				D275BE492CAC1A6D00C770BC /* MyPizzaOrderSasidurkaApp.swift in Sources */,
+				D2B985E12CC6021600211483 /* MyPizzaOrderDataModel.swift in Sources */,
+				D275BE572CAC1AA700C770BC /* OrderListView.swift in Sources */,
+				D2B985EB2CC60AE100211483 /* OrderEntity+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +364,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D2B985D92CC556A400211483 /* MyPizzaOrderDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D2B985DA2CC556A400211483 /* MyPizzaOrderDataModel.xcdatamodel */,
+			);
+			currentVersion = D2B985DA2CC556A400211483 /* MyPizzaOrderDataModel.xcdatamodel */;
+			path = MyPizzaOrderDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D275BE3D2CAC1A6D00C770BC /* Project object */;
 }
